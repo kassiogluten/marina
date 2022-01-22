@@ -162,6 +162,7 @@ export async function getStaticProps({ params = {} } = {}) {
         },
       },
     },
+    revalidate: 60 * 60 * 24,
   };
 }
 
