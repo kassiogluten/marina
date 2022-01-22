@@ -35,11 +35,11 @@ App.getInitialProps = async function (appContext) {
   const appProps = await NextApp.getInitialProps(appContext);
 
   const { posts: recentPosts } = await getRecentPosts({
-    count: 5,
+    count: 10,
   });
 
   const { categories } = await getCategories({
-    count: 5,
+    count: 10,
   });
 
   const { menus } = await getAllMenus();

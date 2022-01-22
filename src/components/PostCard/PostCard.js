@@ -39,7 +39,7 @@ const PostCard = ({ post, options = {} }) => {
       <Link href={postPathBySlug(slug)}>
         <a>
           {post.featuredImage?.sourceUrl && (
-            <Image src={post.featuredImage?.sourceUrl} height={200} width={200} alt={title} />
+            <Image className={styles.featuredImage} objectPosition="center" objectFit='cover' src={post.featuredImage?.sourceUrl} height={150} width={280} alt={title} />
           )}
           <h3
             className={styles.postCardTitle}
@@ -47,17 +47,17 @@ const PostCard = ({ post, options = {} }) => {
               __html: title,
             }}
           />
-        </a>
-      </Link>
+      </a>
+    </Link>
       <Metadata className={styles.postCardMetadata} {...metadata} />
       {excerpt && (
         <div
-          className={styles.postCardContent}
-          dangerouslySetInnerHTML={{
-            __html: sanitizeExcerpt(excerpt),
-          }}
+        className={styles.postCardContent}
+        dangerouslySetInnerHTML={{
+          __html: sanitizeExcerpt(excerpt),
+        }}
         />
-      )}
+        )}
     </div>
   );
 };
