@@ -9,7 +9,6 @@ import styles from './PostCard.module.scss';
 import Image from 'next/image';
 
 const PostCard = ({ post, options = {} }) => {
-  console.log('post', post)
   const { title, excerpt, slug, date, author, categories, isSticky = false } = post;
   const { excludeMetadata = [] } = options;
 
@@ -38,7 +37,7 @@ const PostCard = ({ post, options = {} }) => {
       {isSticky && <FaMapPin aria-label="Sticky Post" />}
       <Link href={postPathBySlug(slug)}>
         <a>
-        <Image src={post.featuredImage.sourceUrl} height={200} width={200} alt={title}/>
+          <Image src={post.featuredImage.sourceUrl} height={200} width={200} alt={title} />
           <h3
             className={styles.postCardTitle}
             dangerouslySetInnerHTML={{

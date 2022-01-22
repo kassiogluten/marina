@@ -28,6 +28,6 @@ export async function getStaticProps() {
         basePath: '/posts',
       },
     },
-    revalidate: 60 * 60 * 24
+    revalidate: 60 * 60 * 24,
   };
 }
