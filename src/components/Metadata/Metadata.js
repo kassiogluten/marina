@@ -32,7 +32,7 @@ const Metadata = ({ className, author, date, categories, options = DEFAULT_METAD
                 alt="Author Avatar"
               />
             )}
-            By{' '}
+            Por{' '}
             <Link href={authorPathByName(author.name)}>
               <a rel="author">{author.name}</a>
             </Link>
@@ -53,7 +53,7 @@ const Metadata = ({ className, author, date, categories, options = DEFAULT_METAD
               <Link href={categoryPathBySlug(categories[0].slug)}>
                 <a>{categories[0].name}</a>
               </Link>
-              {categories.length > 1 && ' and more'}
+              {categories.length > 1 && ' e mais'}
             </p>
           )}
           {!compactCategories && (

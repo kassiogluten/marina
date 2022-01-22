@@ -27,7 +27,7 @@ const Footer = () => {
                 <li>
                   <Link href="/posts/">
                     <a className={styles.footerMenuTitle}>
-                      <strong>Recent Posts</strong>
+                      <strong>Novos conteúdos</strong>
                     </a>
                   </Link>
                   <ul className={styles.footerMenuItems}>
@@ -48,7 +48,7 @@ const Footer = () => {
                 <li>
                   <Link href="/categories/">
                     <a className={styles.footerMenuTitle}>
-                      <strong>Categories</strong>
+                      <strong>Categorias</strong>
                     </a>
                   </Link>
                   <ul className={styles.footerMenuItems}>
@@ -65,9 +65,9 @@ const Footer = () => {
                   </ul>
                 </li>
               )}
-              <li>
+              {/* <li>
                 <p className={styles.footerMenuTitle}>
-                  <strong>More</strong>
+                  <strong>Mais</strong>
                 </p>
                 <ul className={styles.footerMenuItems}>
                   <li>
@@ -77,7 +77,7 @@ const Footer = () => {
                     <a href="/sitemap.xml">Sitemap</a>
                   </li>
                 </ul>
-              </li>
+              </li> */}
             </ul>
           </Container>
         </Section>
