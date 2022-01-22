@@ -5,8 +5,8 @@
  */
 
 export function formatDate(date = 'PPP') {
-  return new Date(date).toLocaleDateString("pt-BR", {
-    timeZone: "America/Sao_Paulo",
+  return new Date(date).toLocaleDateString('pt-BR', {
+    timeZone: 'America/Sao_Paulo',
   });
 }
 
