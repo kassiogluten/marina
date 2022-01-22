@@ -162,7 +162,7 @@ export async function getStaticProps({ params = {} } = {}) {
         },
       },
     },
-    revalidate: 60 * 60,
+    revalidate: 60 * 10,
 
   };
 }
@@ -180,6 +180,6 @@ export async function getStaticPaths() {
 
   return {
     paths,
-    fallback: false,
+    fallback: 'blocking',
   };
 }
