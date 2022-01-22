@@ -1,10 +1,10 @@
-import { format } from 'date-fns';
+// import { format } from 'date-fns';
 
 /**
  * formatDate
  */
 
-export function formatDate(date, pattern = 'PPP') {
+export function formatDate(date = 'PPP') {
   return new Date(date).toLocaleDateString("pt-BR", {
     timeZone: "America/Sao_Paulo",
   });

@@ -80,7 +80,7 @@ export default function Post({ post, socialImage, relatedPosts }) {
             dangerouslySetInnerHTML={featuredImage.caption}
           />
         )}
-        <h1
+        <h2
           className={styles.title}
           dangerouslySetInnerHTML={{
             __html: title,
@@ -162,6 +162,8 @@ export async function getStaticProps({ params = {} } = {}) {
         },
       },
     },
+    revalidate: 60 * 60,
+
   };
 }
 

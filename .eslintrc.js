@@ -24,10 +24,13 @@ module.exports = {
   },
   plugins: ['react', 'react-hooks'],
   rules: {
-    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/rules-of-hooks': 'warn',
     'react-hooks/exhaustive-deps': 'warn',
     'react/prop-types': 'off',
     'react/react-in-jsx-scope': 'off',
     '@next/next/no-img-element': 'off',
+    'react/no-unescaped-entities': 'off',
+    '@next/next/no-page-custom-font': 'off',
+    'prettier/prettier': 'off',
   },
 };
